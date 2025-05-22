@@ -3,7 +3,7 @@ class CreateMovies < ActiveRecord::Migration[7.1]
     create_table :movies do |t|
       t.string :overview
       t.string :poster_url
-      t.decimal :rating
+      t.decimal :rating, precision: 3, scale: 1
 
       t.timestamps
     end
