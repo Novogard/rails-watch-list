@@ -1,0 +1,10 @@
+<h1>Lists#index</h1>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  <% @lists.each do |list|%>
+  <%= link_to list.name, list_path(list) %>
+</div>
+
+      <li></li>
+    <% end %>
+
+<%= link_to "Add new list", new_list_path %>
